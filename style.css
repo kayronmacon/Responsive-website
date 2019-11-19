@@ -1,0 +1,388 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: visible;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: rgb(206, 204, 204);
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a {
+    color: rgb(206, 204, 204);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px ;
+    height: 3px ;
+    background-color: rgb(206, 204, 204);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+body {
+    background-image: url("/img/weed-background-wallpaper-7.jpg");
+    background-repeat: repeat;
+    
+}
+
+.container1{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 8% ;
+    text-transform: uppercase ;
+    letter-spacing: 9px;
+    font-size: 28px;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   margin-bottom: 2%;
+   
+
+    
+}
+h6{
+    letter-spacing: 7px;
+    margin-top: -5% ;
+}
+i{
+    font-size: 300%;
+   
+}
+a :hover{
+    margin: 0px 5% 0px 5%;
+
+    color: red;
+    margin-top: 2%;
+   
+     
+}
+li a{
+    margin: 0px 5% 0px 5%;
+    width: 120%;
+    height: 100%;
+    display: flex;
+}
+
+a{
+    margin: 0px 5% 0px 5%;
+    width: 120%;
+    height: 100%;
+   
+}
+
+.loungePic{
+    width: 50%;
+    height: auto;
+    margin: 0px 0px 0px 0%;
+    border: 2px solid rgbo(34, 99, 1);
+    border-radius: 12px;
+}
+.infoRow{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin-right: 1.5% ;
+   background-image: url(/img/blackbackground.jpg);
+   border: 2px solid rgb(34, 99, 1);
+   border-radius: 12px;
+}
+.infoRow p{
+    font-size: 12px;
+    letter-spacing: 0px;
+    margin: 7% 0px 3% 0px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.iconsSocial{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.container2{
+    display: flex;
+    height: 800px;
+}
+.content{
+    background-color: green;
+    flex: 1;
+    
+}
+.side-bar {
+    background-color: red;
+    border: 1px solid white;
+    flex: 0 1 30%;
+    
+}
+.footer {
+    background-color: pink;
+    border: 1px solid white;
+    height: 12%;
+}
+@media screen and (min-width: 1300px){
+    .infoRow p{
+        font-size: 17px;
+        width: 90%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1068px){
+    .nav-links{
+        width: 60%;
+    }
+    body {
+        background-image: url("/img/weed-background-wallpaper-7.jpg");
+        background-repeat: repeat
+        
+
+}
+.container1{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 10% ;
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+.nav-links a {
+    color: rgb(206, 204, 204);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.logo {
+    color: rgb(206, 204, 204);
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+h6{
+    letter-spacing: 7px;
+    font-size: 12px;
+}
+@media screen and (max-width: 858px){
+    .container1{
+        color: rgb(206, 204, 204);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 10% ;
+        text-transform: uppercase ;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    h6{
+        letter-spacing: 7px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    
+    body{
+        overflow-x: hidden;
+        background-image: url("/img/weed-background.tabletSize.jpg");
+        background-repeat: no-repeat;
+        background-color: black;
+        
+
+    } 
+  
+
+    .logo {
+        color: rgb(206, 204, 204);
+        text-transform: uppercase ;
+        letter-spacing: 4px;
+        font-size: 27px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .burger{
+        display: block; 
+    }
+
+.nav-active{
+    transform: translateX(0%);
+}
+.container1{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1% ;
+    text-transform: uppercase ;
+    letter-spacing: 7px;
+    font-size: 22px;
+    
+    
+   
+    
+}
+
+.infoRow{
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13% ;
+    text-transform: uppercase ;
+    letter-spacing: 7px;
+    font-size: 22px;
+    width: 90%;
+   
+    
+}
+.iconsSocial{
+    display: flex;
+    justify-content: stretch;
+    width: 60%;
+}
+a{
+    margin: 0px 5% 0px 5%;
+    width: 120%;
+    height: 100%;
+}
+ a :hover{
+    margin: 0px 5% 0px 5%;
+    width: 150%;
+    height: 220%;
+    color: red;
+    margin-top: 10%;
+    margin-bottom: -10%;
+     
+}
+
+.loungePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.infoRow p{
+    font-size: 11px;
+    letter-spacing: 0px;
+    margin: 7% 0% 3% 0%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ h6{
+    letter-spacing: 7px;
+    margin-top: 0.5% ;
+}
+
+
+
+/* Icon Edit Start */
+.iconsfa{
+    font-size: 68px;
+    margin-top: 5%;
+    letter-spacing: 29px;
+    
+}
+
+.iconsNote {
+    display: flex;
+    color: rgb(206, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase ;
+    letter-spacing: 10px;
+    font-size: 20px;
+    margin-left: -2%;
+}
+/* Loud Lounge Picture */
+.loungePic {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 8% 0px 4% -1%;
+}}
+
+   
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    top{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+   opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
